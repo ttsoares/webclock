@@ -1,0 +1,100 @@
+@import "@fontsource/inter";
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1440px;
+}
+
+:root {
+  --color-black: #000000;
+  --color-grey-dark: #303030;
+  --color-grey-light: #999999;
+  --color-white: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  color: var(--color-white);
+}
+
+@layer utilities {
+  /* === PS-1 === */
+  .ps-1 {
+    @apply text-[100px] leading-[73%] tracking-[-2.5px] font-bold;
+  }
+  @media (min-width: 1440px) {
+    .\lg\:ps-1 {
+      @apply text-[200px] leading-[73%] tracking-[-5px] font-bold;
+    }
+  }
+
+  /* === PS-2 === */
+  .ps-2 {
+    @apply text-[20px] leading-[120%] tracking-[0px] font-bold;
+  }
+  @media (min-width: 768px) {
+    .\md\:ps-2 {
+      @apply text-[40px] leading-[120%] tracking-[0px] font-bold;
+    }
+  }
+  @media (min-width: 1440px) {
+    .\lg\:ps-2 {
+      @apply text-[56px] leading-[120%] tracking-[0px] font-bold;
+    }
+  }
+
+  /* === PS-3 === */
+  .ps-3 {
+    @apply text-[20px] leading-[73%] tracking-[-5px] font-light;
+  }
+  @media (min-width: 1440px) {
+    .\lg\:ps-3 {
+      @apply text-[40px] leading-[73%] tracking-[0px] font-light;
+    }
+  }
+
+  /* === PS-4 === */
+  .ps-4 {
+    @apply text-[15px] leading-[110%] tracking-[3px] font-bold;
+  }
+  @media (min-width: 1440px) {
+    .\lg\:ps-4 {
+      @apply text-[24px] leading-[110%] tracking-[4.8px] font-bold;
+    }
+  }
+
+  /* === PS-5 === */
+  .ps-5 {
+    @apply text-[20px] leading-[110%] tracking-[5px] font-normal;
+  }
+
+  /* === PS-6 === */
+  .ps-6 {
+    @apply text-[18px] leading-[150%] tracking-[0px] font-normal;
+  }
+
+  /* === PS-7 === */
+  .ps-7 {
+    @apply text-[18px] leading-[150%] tracking-[0px] font-extrabold;
+  }
+
+  /* === PS-8 === */
+  .ps-8 {
+    @apply text-[16px] leading-[140%] tracking-[5px] font-bold;
+  }
+
+  /* === PS-9 === */
+  .ps-0 {
+    @apply text-[10px] leading-[150%] tracking-[2px] font-normal;
+  }
+  @media (min-width: 1440px) {
+    .\lg\:ps-0 {
+      @apply text-[15px] leading-[150%] tracking-[3px] font-normal;
+    }
+  }
+}

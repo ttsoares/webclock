@@ -1,0 +1,6 @@
+# This is used to call direectly the APIs with the VSC plugin REST Client
+GET http://localhost:3000/api/time
+
+GET http://localhost:3000/api/quote
+
+GET http://localhost:3000/api/location
