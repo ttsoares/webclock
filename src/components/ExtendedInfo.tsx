@@ -58,7 +58,6 @@ function ExtendedInfo({ className }: { className: string }) {
         infoType="Week number"
         className="md:order-4"
       />
-      {/* <div className="hidden sp:block sp:absolute sp:w-[1px] sp:h-[25.2rem] sp:bg-white opacity-[0.25] top-[7.4rem] left-[50%]"></div> */}
     </div>
   );
 }

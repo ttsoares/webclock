@@ -9,7 +9,7 @@ export default function useTime() {
     const id = setInterval(function () {
       setTime(formatTime(new Date()));
       console.log("Time updated");
-    }, 1800000);
+    }, 60000);
 
     return () => clearInterval(id);
   }, []);
