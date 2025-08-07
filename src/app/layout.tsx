@@ -1,3 +1,5 @@
+import ReactQueryProvider from './ReactQueryProvider';
+
 import type { Metadata } from "next";
 import "@fontsource/inter";
 import "./globals.css";
@@ -15,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-inter antialiased">
-        {children}
+        <ReactQueryProvider>
+          {children}
+        </ReactQueryProvider>
       </body>
     </html>
   );
